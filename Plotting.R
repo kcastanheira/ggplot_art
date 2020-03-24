@@ -16,7 +16,7 @@ temp = sample(1:nrow(image_data), 300000)
 temp = image_data[temp,]
 
 temp %>%
-  ggplot(aes(X, Y, color=logL, alpha=0.1)) +
+  ggplot(aes(X, Y, color=L, alpha=0.1)) +
   geom_point(shape=20, size=0.25) + theme_minimal() + coord_fixed() + 
   scale_color_gradientn(colours=c("black", "white"))
 
